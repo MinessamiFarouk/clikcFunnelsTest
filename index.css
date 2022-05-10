@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+h1 {
+  font-family: "poppins";
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 56px;
+  text-transform: uppercase;
+}
+h1 span {
+  font-family: "dancing script";
+  color: #ea9611;
+  text-transform: lowercase;
+  font-size: 65px;
+  word-spacing: 5px;
+  padding-left: 10px;
+}
+.heading p {
+  font-family: "SHADOWS INTO LIGHT TWO";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 40px;
+}
+.heading p strong {
+  font-family: "Spartan";
+}
+.heading hr {
+  margin: 20px 0;
+  width: 215px;
+  height: 0px;
+  border: 3px solid #ea9611;
+}
+.container {
+  width: 992px;
+  margin: 0 auto;
+}
+.logo {
+  width: 432px;
+  height: 57px;
+}
+.imageBox .container {
+  position: relative;
+  justify-content: start;
+}
+.imageBox .container::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  content: "";
+}
+.imageBox .image {
+  width: 124px;
+  height: 320px;
+}
+.imageBox .image img {
+  width: 100%;
+  height: 100%;
+}
+.heading {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.heading p {
+  font-family: "Spartan";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 40px;
+}
+
+/* part3 */
+.part3 .container .boxContent {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.part3 .container .boxContent .left {
+  width: 40%;
+}
+.part3 .container .boxContent .left p {
+  font-family: "Spartan";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+.part3 .container .boxContent .left .btn-counter {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.part3 .container .boxContent .left .btn-counter button {
+  background-color: #ea9611;
+  padding: 15px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+}
+
+.part3 .container .boxContent .left .btn-counter .counter {
+  flex-grow: 2;
+  padding-left: 20px;
+  padding-bottom: 15px;
+  align-self: flex-end;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.part3 .container .boxContent .right {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #ea9611 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+/* part4*/
+.part4 .container .context .icon-text,
+.part5 .container .context .icon-text {
+  justify-content: center;
+}
+.part4 .container .context .icon-text img,
+.part5 .container .context .icon-text img {
+  vertical-align: middle;
+  width: 84px;
+  height: 86px;
+}
+.part4 .container .context .icon-text h2,
+.part5 .container .context .icon-text h2 {
+  padding-left: 10px;
+  font-family: "Spartan";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 86px;
+  text-transform: uppercase;
+}
+.part4 .container .context .icon-text h2 span,
+.part5 .container .context .icon-text h2 span {
+  font-family: "Meow Script";
+  font-weight: 300;
+  font-size: 70px;
+  line-height: 86px;
+  text-transform: uppercase;
+}
+.part4 .container .context hr,
+.part5 .container .context hr {
+  width: 215px;
+  height: 0px;
+  border: 3px solid #ea9611;
+  margin: 30px auto;
+}
+.part4 .container .context p,
+.part5 .container .context p {
+  font-family: "Spartan";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+.part4 .imageBox {
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 70px 0;
+}
+.part4 .imageBox .img {
+  width: 25%;
+  height: 265px;
+}
+.part4 .imageBox .img img {
+  width: 100%;
+  height: 100%;
+}
+section {
+  padding-top: 80px;
+}
+section article .article-top h3 {
+  cursor: pointer;
+  font-weight: 700;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+section article .article-top hr {
+  width: 40px;
+  margin-top: 15px;
+  margin-bottom: 22px;
+  border: 3px solid #ea9611;
+}
+
+section article .article-bottom {
+  flex-wrap: wrap;
+}
+section article .article-bottom div:last-child {
+  padding-left: 45px;
+}
+section article .article-bottom div:last-child p {
+  width: 530px;
+  font-family: "Spartan";
+  font-size: 18px;
+  line-height: 30px;
+}
+section article {
+  border: 1px solid #ea9611;
+  border-radius: 4px;
+  padding: 15px 25px;
+  margin-bottom: 20px;
+  max-height: 50px;
+  overflow: hidden;
+  transition: 0.2s ease-in;
+}
+
+.max-height {
+  max-height: 600px !important;
+}
+.part5 .container .context .text {
+  font-family: "Spartan";
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 40px;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+.part5 .container .context .text h2 {
+  color: #ea9611;
+  font-size: 20px;
+}
+.part5 .container .btn-counter {
+  justify-content: center;
+  padding: 30px 0;
+}
+.part5 .container .btn-counter button {
+  background-color: #ea9611;
+  padding: 15px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+}
+
+.part5 .container .btn-counter .counter {
+  padding-left: 20px;
+  padding-bottom: 15px;
+  align-self: flex-end;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+/*medai query responcive*/
+@media (max-width: 429px) {
+  h2 {
+    font-size: 20px !important;
+    line-height: 54px !important;
+  }
+  .container {
+    width: 100%;
+    padding: 0 8px;
+  }
+  .hidden {
+    display: none;
+  }
+  .logo {
+    text-align: center;
+  }
+  .logo a img {
+    width: 227px;
+  }
+  .heading {
+    text-align: center;
+  }
+  .heading h1 {
+    font-size: 30px;
+  }
+  .heading p {
+    font-size: 20;
+  }
+  .heading hr {
+    margin: auto;
+    width: 180px;
+    margin-top: 20px;
+  }
+  .boxContent > div {
+    width: 100%;
+  }
+  .boxContent p {
+    text-align: center !important;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .btn-counter {
+    flex-direction: column;
+    justify-content: space-around !important;
+    align-items: center;
+    height: 200px;
+  }
+  .btn-counter .counter {
+    flex-grow: 0 !important;
+    padding-left: 0px !important;
+    align-self: stretch !important;
+  }
+  .part4 .imageBox .img {
+    height: 94px;
+  }
+  section article .article-bottom > * {
+    width: 100%;
+  }
+  section article .article-bottom .b-right {
+    padding-left: 0 !important;
+  }
+  section article .article-bottom .b-right p {
+    width: 100% !important;
+  }
+}
+
+/*repetitive style*/
+.part5 .container .btn-counter button,
+.part4 .container .context p,
+.part5 .container .context p,
+.part5 .container .btn-counter,
+section,
+.part4 .container .context .icon-text,
+.part5 .container .context .icon-text,
+.part3 .container .boxContent .left .btn-counter button,
+.part3 .container .boxContent,
+.heading p,
+h1 {
+  color: #ffffff;
+}
+
+.part5 .container .btn-counter .counter,
+.part5 .container .context .text,
+.part4 .container .context p,
+.part5 .container .context p,
+.part3 .container .boxContent .left .btn-counter .counter {
+  text-align: center;
+}
+.part5 .container .btn-counter,
+section article .article-bottom,
+section article .article-top h3,
+.part4 .imageBox,
+.part4 .container .context .icon-text,
+.part5 .container .context .icon-text,
+.part3 .container .boxContent .left .btn-counter,
+.part3 .container .boxContent,
+.imageBox .container {
+  display: flex;
+}

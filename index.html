@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="#"
+            ><img
+              src="https://images.clickfunnels.com/82/e8fe914a85460a8b895b104540c3c9/logo.png"
+              alt="logo"
+          /></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="imageBox">
+      <div class="container">
+        <div class="image">
+          <img
+            src="https://images.clickfunnels.com/9d/7ed3e3ed5c4c66b53035fccf0e5899/Backstage-IMG03035-1.png"
+            alt="img 1"
+          />
+        </div>
+        <div class="image">
+          <img
+            src="https://images.clickfunnels.com/94/88b861ec284394a62064b5db76c887/HeleneDarroz-AGO1887-1-1.png"
+            alt="img 2"
+          />
+        </div>
+        <div class="image">
+          <img
+            src="https://images.clickfunnels.com/ca/7cb322f57a4981ad52247510a4de7a/HeleneDarroz-AGO1887-1.png"
+            alt="img 3"
+          />
+        </div>
+        <div class="image">
+          <img
+            src="https://images.clickfunnels.com/d4/6dc60c34194472b710e53119e974bb/CyrilLignac-IMG04886-1.png"
+            alt="img 4"
+          />
+        </div>
+        <div class="image hidden">
+          <img
+            src="https://images.clickfunnels.com/41/0b3bfa42a14aacbbfe06b320552de5/AurelieVagnole-IMG01934-1.png"
+            alt="img 5"
+          />
+        </div>
+        <div class="image hidden">
+          <img
+            src="https://images.clickfunnels.com/47/442fb4ff084c7ba248c375eb5e9675/1138465-deux-jours-apres-sa-sortie-1.png"
+            alt="img 6"
+          />
+        </div>
+        <div class="image hidden">
+          <img
+            src="https://images.clickfunnels.com/ea/b2d4c47c92410eafe0fdbe7c70db53/Backstage-IMG03035-1-1.png"
+            alt="img 7"
+          />
+        </div>
+        <div class="image hidden">
+          <img
+            src="https://images.clickfunnels.com/3a/92f3b31d3d48d0bcaf03c79be17838/PierreHerme-IMG07599-1.png"
+            alt="img 8"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="heading">
+      <div class="container">
+        <h1>MentorShow fête ses <span>2 ans !</span></h1>
+        <p>
+          N'amenez pas le gâteau et les bougies, on s'occupe de tout.</br>
+          <strong>34 masterclass pour le prix d'une</strong>, ça se fête non ?
+        </p>
+        <hr>
+      </div>
+      <div class="imageBox"></div>
+    </div>
+
+    <div class="part3">
+      <div class="container">
+        <div class="boxContent">
+          <div class="left">
+            <p>Jusqu’au Dimanche 1er Mai 2022 inclus,
+            abonnez-vous au Pass illimité et visionnez en illimité
+            pendant 1 an toutes nos masterclass pour le prix d’une,
+            c'est-à-dire 97€ (ou 3x33€).</p>
+            <div class="btn-counter">
+              <button>Je profite de l’offre <br> spéciale anniversaire</button>
+              <div class="counter">
+                <span>16</span> :
+                <span>45</span> :
+                <span>55</span>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <img src="https://images.clickfunnels.com/30/685cb80ca7454ba01a18b83d7d66f2/Mockup-screen-1-1-.png" alt="">
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <script>
+      let root = document.querySelector('.counter');
+      let heure = root.children[0];
+      let min = root.children[1];
+      let sec = root.children[2];
+
+      const countDown = (heure, min, sec) => {
+      const count = setInterval(() => {
+          +sec.textContent--;
+
+          if(+heure.textContent === 0 && +min.textContent === 0 && +sec.textContent === 0) {
+              return clearInterval(countDown)
+          }
+          
+          if(+sec.textContent === 0) {
+            sec.textContent = 59;
+            +min.textContent--;
+            if(+min.textContent === 0 && +heure.textContent === 0) {
+              return;
+            }
+            if(+min.textContent === 0) {
+              min.textContent = 59;
+              if(+heure.textContent === 0) {
+                return
+              }
+              +heure.textContent--;
+            }
+          }
+          
+        }, 1000)
+      }
+
+      countDown(heure, min, sec);
+      
+    </script>
+
+    <div class="part4">
+      <div class="container">
+        <div class="context">
+          <div class="icon-text">
+            <img src="https://images.clickfunnels.com/ee/8450fbf4114e949429a2ee0a3fe0ee/Vector.png" alt="">
+            <h2><span>34</span> FAÇONS DE PRENDRE DU TEMPS POUR VOUS</h2>
+          </div>
+          <hr>
+          <p>Nos masterclass ont le pouvoir de raviver la flamme de l’apprentissage, de libérer votre créativité et de vous <br>
+             inspirer à ne plus subir la vie. Ambitieux comme promesse ? C’est vrai. Alors promis, on vous explique tout.</p>
+        </div>
+        <div class="imageBox">
+          <div class="img">
+            <img src="https://images.clickfunnels.com/0e/9b3f5abcfb4b00a667cc092442645a/DavidLaroche-A7B7376-1.png" alt="image 1">
+          </div>
+          <div class="img">
+            <img src="https://images.clickfunnels.com/00/f5d0f3a0a24bbdba367774d57617e3/IMG04807-2.png" alt="image 2">
+          </div>
+          <div class="img">
+            <img src="https://images.clickfunnels.com/7e/7a9f3d954a4598be27a5dbfadf9a34/CyrilLignac-IMG04886.png" alt="image 3">
+          </div>
+          <div class="img">
+            <img src="https://images.clickfunnels.com/7a/f1d998250d4be8b74ff0c8789151ae/IMG04807-1.png" alt="image 4">
+          </div>
+          <div class="img">
+            <img src="https://images.clickfunnels.com/ea/2d11e5ec6447308c38d0764c7ee8f4/ChristopheAndre-IMG00586.png" alt="image 5">
+          </div>
+          <div class="img">
+            <img src="https://images.clickfunnels.com/a8/6d457be410412cb6867aad07743153/IMG06930-1.png" alt="image 6">
+          </div>
+          <div class="img">
+            <img src="https://images.clickfunnels.com/cb/5c88b487d740f79a84caacc83aaf76/AurelieVagnole-IMG01934.png" alt="image 7">
+          </div>
+          <div class="img">
+            <img src="https://images.clickfunnels.com/50/d643f676c94428805a58943c6d2370/IMG06930-2.png" alt="image 8">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="part5">
+      <div class="container">
+
+        <div class="context">
+          <div class="icon-text">
+            <img src="https://images.clickfunnels.com/ee/8450fbf4114e949429a2ee0a3fe0ee/Vector.png" alt="">
+            <h2><span>8</span> MASTERCLASS POUR VOUS FAIRE DU BIEN</h2>
+          </div>
+          <hr>
+          <p>Parce que comme disent nos anciens (mais pas que)… la santé, c’est la vie !</p>
+        </div>
+
+        <section>
+          <article class="max-height">
+              <div class="article-top">
+                  <h3>
+                      <span>Boris Cyrulnik</span>
+                      <span><img src="https://images.clickfunnels.com/88/171e6df6c1481e8313b50f1ee12f80/Vector-1-.png" alt="icon"></span>
+                  </h3>
+                  <hr />
+              </div>
+              <div class="article-bottom">
+                  <div class="b-left">
+                      <img src="https://images.clickfunnels.com/86/dec8873f5b4c4bb2d216fe39fd4974/Backstage-IMG03035-2.jpg" alt=" image">
+                  </div>
+                  <div class="b-right">
+                      <p>Vous avez vécu des traumatismes ? Vous vivez des moments difficiles ? Ne cherchez plus ! Apprenez la résilience avec Boris Cyrulnik, médecin et psychiatre de profession. 18 leçons en vidéo, 6h 07 au total</p>
+                  </div>
+              </div>
+          </article>
+          <article>
+            <div class="article-top">
+                <h3>
+                    <span>Christophe André</span>
+                    <span><img src="https://images.clickfunnels.com/88/171e6df6c1481e8313b50f1ee12f80/Vector-1-.png" alt="icon"></span>
+                </h3>
+                <hr />
+            </div>
+            <div class="article-bottom">
+                <div class="b-left">
+                    <img src="https://images.clickfunnels.com/86/dec8873f5b4c4bb2d216fe39fd4974/Backstage-IMG03035-2.jpg" alt=" image">
+                </div>
+                <div class="b-right">
+                    <p>Vous avez vécu des traumatismes ? Vous vivez des moments difficiles ? Ne cherchez plus ! Apprenez la résilience avec Boris Cyrulnik, médecin et psychiatre de profession. 18 leçons en vidéo, 6h 07 au total</p>
+                </div>
+            </div>
+        </article>
+        <article>
+          <div class="article-top">
+              <h3>
+                  <span>Frédéric Lenoir</span>
+                  <span><img src="https://images.clickfunnels.com/88/171e6df6c1481e8313b50f1ee12f80/Vector-1-.png" alt="icon"></span>
+              </h3>
+              <hr />
+          </div>
+          <div class="article-bottom">
+              <div class="b-left">
+                  <img src="https://images.clickfunnels.com/86/dec8873f5b4c4bb2d216fe39fd4974/Backstage-IMG03035-2.jpg" alt=" image">
+              </div>
+              <div class="b-right">
+                  <p>Vous avez vécu des traumatismes ? Vous vivez des moments difficiles ? Ne cherchez plus ! Apprenez la résilience avec Boris Cyrulnik, médecin et psychiatre de profession. 18 leçons en vidéo, 6h 07 au total</p>
+              </div>
+          </div>
+      </article>
+      <article>
+        <div class="article-top">
+            <h3>
+                <span>Ansembourg</span>
+                <span><img src="https://images.clickfunnels.com/88/171e6df6c1481e8313b50f1ee12f80/Vector-1-.png" alt="icon"></span>
+            </h3>
+            <hr />
+        </div>
+        <div class="article-bottom">
+            <div class="b-left">
+                <img src="https://images.clickfunnels.com/86/dec8873f5b4c4bb2d216fe39fd4974/Backstage-IMG03035-2.jpg" alt=" image">
+            </div>
+            <div class="b-right">
+                <p>Vous avez vécu des traumatismes ? Vous vivez des moments difficiles ? Ne cherchez plus ! Apprenez la résilience avec Boris Cyrulnik, médecin et psychiatre de profession. 18 leçons en vidéo, 6h 07 au total</p>
+            </div>
+        </div>
+    </article>
+    <article>
+      <div class="article-top">
+          <h3>
+              <span>Mais aussi…</span>
+              <span><img src="https://images.clickfunnels.com/88/171e6df6c1481e8313b50f1ee12f80/Vector-1-.png" alt="icon"></span>
+          </h3>
+          <hr />
+      </div>
+      <div class="article-bottom">
+          <div class="b-left">
+              <img src="https://images.clickfunnels.com/86/dec8873f5b4c4bb2d216fe39fd4974/Backstage-IMG03035-2.jpg" alt=" image">
+          </div>
+          <div class="b-right">
+              <p>Vous avez vécu des traumatismes ? Vous vivez des moments difficiles ? Ne cherchez plus ! Apprenez la résilience avec Boris Cyrulnik, médecin et psychiatre de profession. 18 leçons en vidéo, 6h 07 au total</p>
+          </div>
+      </div>
+  </article>
+      </section>
+
+      <div class="context">
+        <div class="text">
+          <h2>Offre spéciale anniversaire :</h2>
+          <p>+ 34 masterclass pour le prix d’une ! Soit 97€ (ou 3x33€)</p>
+        </div>
+      </div>
+      <div class="btn-counter">
+        <button>Voir mes premières leçons</button>
+        <div class="counter counterTwo">
+          <span>16</span> :
+          <span>48</span> :
+          <span>55</span>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+    <script>
+
+      //counter number two
+      let r = document.querySelector('.counterTwo');
+      let h = r.children[0];
+      let m = r.children[1];
+      let s = r.children[2];
+
+      
+
+      const boxArticle = [...document.getElementsByTagName('article')];
+
+// create function add class in element 
+const add_class_element = (element, name_class) => {
+element.classList.add(name_class)
+}
+// create function add class in element 
+const remove_class_element = (element, name_class) => {
+element.classList.remove(name_class)
+}
+// create function toggle class in element 
+const toggle_class_element = (element, name_class) => {
+element.classList.toggle(name_class)
+}
+
+countDown(h,m,s)
+
+boxArticle.forEach(article => {
+article.firstElementChild.addEventListener("click", (e) => {
+  if (article.classList.contains('max-height')) {
+      remove_class_element(article, 'max-height');
+      return
+  }
+  let remove_class = document.querySelector('.max-height')
+  if (remove_class) remove_class_element(remove_class, 'max-height')
+  add_class_element(article, 'max-height')
+})
+});
+
+
+    </script>
+
+    
+  </body>
+</html>
